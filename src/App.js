@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux';
+import { Playground, store } from 'graphql-playground-react';
+import { getPlayGroundSettings, getConfig } from './settings';
+
+const token = ''; //ADD YOUR VALID TOKEN
+const url = ''; // ADD API URL
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Playground
+        config={getConfig(token, url)}
+        settings={getPlayGroundSettings()}
+      />
+    </Provider>
   );
 }
 
