@@ -2,4 +2,6 @@
 
 > Open App.js and add your token and url
 
-> if differnt token to be added or change in headers go to settings.js and adjust your config object
+> if different token to be added or change in headers go to settings.js and adjust your config object
+
+> Created By Blink22
