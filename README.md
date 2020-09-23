@@ -1,4 +1,4 @@
-# Playground with headers
+# Apollo Playground Graphql with Authroization Header
 
 > Open App.js and add your token and url
 
